@@ -1,5 +1,6 @@
 import React from 'react'
 import MovieCad from './MovieCad'
+import { Link } from 'react-router-dom'
 
 function MovieList({movies}) {
     if(movies.length === 0){
@@ -11,7 +12,9 @@ function MovieList({movies}) {
   return (
     <div className="flex flex-wrap justify-center gap-6 p-4">
         {movies.map(m =>(
-            <MovieCad key={m.id} movie={m}/>
+            <Link key={m.id} to={`/movie/${m.id}`}>
+                <MovieCad movie={m}/>
+            </Link>
         ))}
     </div>
   )
