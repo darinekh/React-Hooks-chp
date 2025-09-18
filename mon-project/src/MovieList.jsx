@@ -1,7 +1,7 @@
 import React from 'react'
 import MovieCad from './MovieCad'
 import { Link } from 'react-router-dom'
-
+   // Composant qui reçoit en props un tableau de films
 function MovieList({movies}) {
     if(movies.length === 0){
         return <div className="text-center p-8 text-gray-500 text-lg">

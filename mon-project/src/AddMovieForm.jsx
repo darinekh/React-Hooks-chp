@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-
+ // Définition du composant AddMovieForm
+  // onAdd est une fonction passée en props qui sera appelée lors de l'ajout d'un film
 function AddMovieForm({ onAdd }) {
   const [title, setTitle] = useState('')
   const [year, setYear] = useState('')

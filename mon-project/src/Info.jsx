@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+ // Définition du composant Info
+  // movie est un objet passé en props contenant toutes les informations du film
 function Info({ movie }) {
   return (
     <div className="container mx-auto px-4 py-8">

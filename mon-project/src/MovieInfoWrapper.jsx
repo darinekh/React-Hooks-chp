@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Info from './Info';
 
+  // Composant wrapper qui reçoit la liste de tous les films en props
 function MovieInfoWrapper({ movies }) {
   // Use the useParams hook to get the id from the URL
   const { id } = useParams();

@@ -1,6 +1,7 @@
 
 import React from 'react'
-
+  // Définition du composant MovieCad
+  // movie est un objet passé en props contenant les infos du film
 function MovieCad({ movie }) {
   return (
     <div className="w-full sm:max-w-xl animate-fade-in">
